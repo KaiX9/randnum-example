@@ -1,0 +1,11 @@
+<hr>
+
+<h2>GET /api/random?count=10</h2>
+
+<button type="button" (click)="getRandomNumbers()">Get Numbers</button>
+<ul>
+  <li *ngFor="let n of num$ | async">
+    {{ n }}
+  </li>
+</ul>
+<hr>
